@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333; /* Fondo oscuro para el encabezado */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0.5rem 0;
+}
+
+/* Menú de navegación */
+#main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Distribución flexible de los elementos del menú */
+    justify-content: center; /* Centrar los elementos horizontalmente */
+}
+
+#main-nav li {
+    margin: 0 15px; /* Espacio entre los elementos del menú */
+}
+
+#main-nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333; /* Color del texto de los enlaces */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+#main-nav a:hover {
+    background-color: #eee; /* Fondo gris claro al pasar el ratón */
+}
+
+/* Sección de contacto */
+#contacto {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#contacto ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contacto li {
+    margin-bottom: 10px;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #777;
+    background-color: #333;
+    color: white;
+}
