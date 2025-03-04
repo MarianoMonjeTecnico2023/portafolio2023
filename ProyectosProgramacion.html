@@ -3,106 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap"
-        rel="stylesheet">
-    <title>Proyectos de Programacion</title>
-    <title>Proyectos de Programación</title>
+    <title>Proyectos de Programación - Mariano Monje Isleño</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <section id="proyectos">
-        <h2>Proyectos Destacados</h2>
-        <div class="proyecto">
-            <h3>Sistema de Gestión para Supermercado</h3>
+    <header class="hero">
+        <nav id="main-nav" class="container">
             <ul>
-                <li>Desarrollado en C# utilizando SQL Server y Entity Framework.</li>
-                <li>Permite el alta de usuarios con diferentes roles (administrador, cajero, etc.).</li>
-                <li>Gestiona el alta, baja, modificación y eliminación de productos, proveedores y clientes.</li>
-                <li>Genera facturas de compra y venta, incluyendo cálculos de impuestos y descuentos.</li>
-                <li>Implementa interfaz de usuario intuitiva y reportes personalizados.</li>
-                <img src="agregando-nuevo-producto.png" alt="agregando-nuevo-producto">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="ProyectosProgramacion.html">Proyectos</a></li>
+                <li><a href="DiseñoGrafico.html">Diseño</a></li>
+                <li><a href="programador.html">CV</a></li>
+                <li><a href="ExperienciaLaboral.html">Experiencia</a></li>
+                <li><a href="CarrerasPlatzi.html">Formación</a></li>
+                <li><a href="Referencias.html">Referencias</a></li>
             </ul>
+        </nav>
+        
+        <div class="hero-content container">
+            <h1>Proyectos de Programación</h1>
+            <p class="subtitle">Una muestra de mis trabajos más destacados en desarrollo de software</p>
         </div>
-        <div class="proyecto">
-            <h3>Página Web de Reproducción de Música: </h3>
-            <ul>
-                <li>Consume la API REST de Spotify para obtener información de artistas, álbumes y canciones.</li>
-                <li>Permite reproducir fragmentos de 30 segundos de canciones disponibles.</li>
-                <li>Utiliza un reproductor de música moderno e integrado en la página.</li>
-                <video width="640" height="360" controls> video mostrando la pagina de Video Juegos!
-                    <source src="App musica.mp4" preload="auto" type="video/mp4">
-                </video>
-                <a class="boton-proyecto" href="https://marianomonjetecnico2023.github.io/AppMusica/"
-                    target="_blank">Explorar el proyecto</a>
-            </ul>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h2>Mis Proyectos</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="desktop">Desktop</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Proyecto DigiDex -->
+                <article class="project-card" data-category="web">
+                    <div class="project-media">
+                        <video src="digidex.mp4" controls></video>
+                    </div>
+                    <div class="project-content">
+                        <h3>DigiDex - Pokédex Digital</h3>
+                        <p class="project-description">Una aplicación web que simula una Pokédex, permitiendo buscar y ver información detallada de Pokémon.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">API REST</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-demo"><i class="fas fa-external-link-alt"></i> Demo en vivo</a>
+                            <a href="#" class="btn-code"><i class="fab fa-github"></i> Ver código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto App Música -->
+                <article class="project-card" data-category="web">
+                    <div class="project-media">
+                        <video src="App musica.mp4" controls></video>
+                    </div>
+                    <div class="project-content">
+                        <h3>Reproductor de Música</h3>
+                        <p class="project-description">Aplicación web para reproducir música con funcionalidades de playlist y control de reproducción.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Web Audio API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-demo"><i class="fas fa-external-link-alt"></i> Demo en vivo</a>
+                            <a href="#" class="btn-code"><i class="fab fa-github"></i> Ver código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto Videojuegos -->
+                <article class="project-card" data-category="web">
+                    <div class="project-media">
+                        <video src="pagina videos juegos.mp4" controls></video>
+                    </div>
+                    <div class="project-content">
+                        <h3>Portal de Videojuegos</h3>
+                        <p class="project-description">Plataforma web dedicada a noticias, reseñas y contenido sobre videojuegos.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-demo"><i class="fas fa-external-link-alt"></i> Demo en vivo</a>
+                            <a href="#" class="btn-code"><i class="fab fa-github"></i> Ver código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Sistema de Gestión para Supermercado -->
+                <article class="project-card" data-category="desktop">
+                    <div class="project-media">
+                        <img src="agregando-nuevo-producto.png" alt="Sistema de Gestión para Supermercado">
+                    </div>
+                    <div class="project-content">
+                        <h3>Sistema de Gestión para Supermercado</h3>
+                        <p class="project-description">Sistema completo de gestión desarrollado en C# que maneja inventario, usuarios, ventas y reportes para supermercados.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">SQL Server</span>
+                            <span class="tech-tag">Entity Framework</span>
+                            <span class="tech-tag">Windows Forms</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-demo"><i class="fas fa-desktop"></i> Demo</a>
+                            <a href="#" class="btn-code"><i class="fab fa-github"></i> Ver código</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mariano Monje Isleño</p>
         </div>
-        <div>
-            <h3> Creación de una DigiDex</h3>
-            <ul>
-            <li> Consume la Api Rest de digimon-api.vercel</li>
-            <li> lo que crea una imitación de la Pokedex de Pokemon pero de Digimon</li>
-            <li> trae los datos como nombre, imagen y nivel del digimon y los muestra</li>
-            <li> ademas tambien en la carta de presentación se le asigno un color si el
-                digimon es de Tipo Vacuna, Datos o Virus
-            </li>
-            <video width="640" height="360" controls> video mostrando la pagina de Video Juegos!
-                <source src="digidex.mp4" preload="auto" type="video/mp4">
-            <a class="boton-proyecto" href="https://marianomonjetecnico2023.github.io/Digidex/"
-                    target="_blank">Visita la DigiDex</a>
-        </ul>
-        </div>
-        <div>
-            <h3> Creación de una pagina web CineArgentino</h3>
-            <ul>
-            <li> Consume la Api Rest de themoviedb </li>
-            <li> lo que crea un listado de peliculas a estrenarse en las salas de Cine de la republica Argentina</li>
-            <li> trae los datos como titulo, imagen, descripción, y si esta disponible un trailer</li>
-           
-            <a class="boton-proyecto" href="https://marianomonjetecnico2023.github.io/CineArgentino/"
-                    target="_blank">Visita la pagina de Cine Argentino</a>
-                    <video width="640" height="360" controls> video mostrando la pagina de Video Juegos!
-                        <source src="Cine.mp4" preload="auto" type="video/mp4">
-        </ul>
-        </div>
-        <div>
-            <h3> Creación de una Pagina web de anime</h3>
-            <ul>
-            <li> Consume la Api Rest de NewsAPI</li>
-            <li> lo que trae noticias y videos  sobre los animes mas populares:
-                digimon, pokemon, onepiece, dragonball, papanokoto, bleach, sao, nanatsu</li>
-          
-           
+    </footer>
+
+    <div class="nav-buttons">
+        <a href="javascript:history.back()" class="nav-button" title="Página Anterior">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        <a href="index.html" class="nav-button" title="Inicio">
+            <i class="fas fa-home"></i>
+        </a>
+    </div>
+
+    <script>
+        // Filtrado de proyectos
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.dataset.filter;
                 
-                <a class="boton-proyecto" href="https://marianomonjetecnico2023.github.io/Anime/"
-                    target="_blank">Visita Noticias de anime</a>
-                    <video width="640" height="360" controls> video mostrando la pagina de Video Juegos!
-                        <source src="Anime.mp4" preload="auto" type="video/mp4"/>
-        </ul>
-        </div>
-        <div>
-            <h3> Creación de una Pagina web de información sobre juegos</h3>
-            <ul>
-            <li> Consume la Api Rest de rawg, y apis de translate</li>
-            <li> Trae Videos juegos de Consolas,Ceulares, y pc. 
-                los muestra por sus diferentes categorias.
-            </li>
-            <li> trae descripcion, titulo, imagen, ademas si estas en la seccion de PC,Trae
-                los requisitos minimos y recomendados para poder correr dicho juego
-            </li>
-            
-           
-            <a class="boton-proyecto" href="https://noticias-juegos.netlify.app/"
-            target="_blank">Visita para ver la información de Videos Juegos!</a>
-            <video width="640" height="360" controls> video mostrando la pagina de Video Juegos!
-                <source src="pagina videos juegos.mp4" preload="auto" type="video/mp4">
-            </video>
-        </ul>
-        </div>
-    </section>
-    <a href="index.html" id="volver-inicio">Volver al Inicio</a>
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                projectCards.forEach(card => {
+                    if (filter === 'todos' || card.dataset.category === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
-<footer><p>&copy; 2023 Mariano Monje Isleño</p></footer>
 </html>

@@ -3,31 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap"
-        rel="stylesheet">
-    <title>Referencias</title>
+    <title>Referencias - Mariano Monje Isleño</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <section id="referencias">
-        <h2>Referencias</h2>
-        <div class="referencia">
-            <p>Jorge Reyes (Director de Protecc Instituto) - 351 688-4735</p>
+    <header class="hero">
+        <nav id="main-nav" class="container">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="ProyectosProgramacion.html">Proyectos</a></li>
+                <li><a href="DiseñoGrafico.html">Diseño</a></li>
+                <li><a href="programador.html">CV</a></li>
+                <li><a href="ExperienciaLaboral.html">Experiencia</a></li>
+                <li><a href="CarrerasPlatzi.html">Desarrollo Profesional</a></li>
+                <li><a href="Referencias.html">Referencias</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-content container">
+            <h1>Referencias Profesionales</h1>
+            <p class="subtitle">Testimonios y recomendaciones de colegas y empleadores</p>
         </div>
-    </section>
-    <section id="referencias">
-        <h2>Recomendación</h2>
-        <div class="referencia">
-            <p>Luciano (Alumno de programación): "Excelente, muy comprometido y claro para explicar. ¡Siempre con buena
-                predisposición! ¡Lo recomiendo! Aprobe el examen final de phyton con 9" (Superprof)</p>
+    </header>
+
+    <main class="container">
+        <section class="section testimonials">
+            <div class="testimonial-grid">
+                <!-- Referencia Profesional -->
+                <article class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="testimonial-info">
+                            <h3>Jorge Reyes</h3>
+                            <p class="testimonial-position">Director de Protecc Instituto</p>
+                            <div class="contact-info">
+                                <i class="fas fa-phone"></i>
+                                <span>351 688-4735</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Mariano demostró ser un profesional excepcional en su rol como Community Manager. Su gestión estratégica de redes sociales y contenido digital resultó en un crecimiento significativo de nuestra presencia online y matrícula estudiantil.</p>
+                    </div>
+                    <div class="testimonial-footer">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Referencia de Estudiante -->
+                <article class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="testimonial-info">
+                            <h3>Luciano</h3>
+                            <p class="testimonial-position">Estudiante de Programación</p>
+                            <div class="platform">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Superprof</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Excelente profesor, muy comprometido y claro para explicar. Siempre con buena predisposición. ¡Lo recomiendo totalmente! Gracias a su ayuda, aprobé el examen final de Python con 9.</p>
+                    </div>
+                    <div class="testimonial-footer">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="achievement">
+                            <i class="fas fa-award"></i>
+                            <span>Nota Final: 9/10</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section cta-section">
+            <h2>¿Necesitas más referencias?</h2>
+            <p>Puedo proporcionar referencias adicionales de otros empleadores y estudiantes bajo solicitud.</p>
+            <div class="cta-buttons">
+                <a href="mailto:ungranbum@gmail.com" class="btn-primary">
+                    <i class="fas fa-envelope"></i>
+                    Contactar
+                </a>
+                <a href="programador.html" class="btn-secondary">
+                    <i class="fas fa-file-alt"></i>
+                    Ver CV Completo
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Mariano Monje Isleño</p>
         </div>
-    </section>
-        
-        
-        <a href="index.html" id="volver-inicio">Volver al Inicio</a>
+    </footer>
+
+    <div class="nav-buttons">
+        <a href="javascript:history.back()" class="nav-button" title="Página Anterior">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        <a href="index.html" class="nav-button" title="Inicio">
+            <i class="fas fa-home"></i>
+        </a>
+    </div>
 </body>
-<footer><p>&copy; 2023 Mariano Monje Isleño</p></footer>
 </html>

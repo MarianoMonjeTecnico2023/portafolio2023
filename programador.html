@@ -3,17 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles.css">
+    <title>Curriculum - Mariano Monje Isleño</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap"
         rel="stylesheet">
-    <title>Mariano Monje Isleño -Programador</title>
-      
-    <title>Programación</title>
 </head>
 <body>
+    <header class="hero">
+        <nav id="main-nav" class="container">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="ProyectosProgramacion.html">Proyectos</a></li>
+                <li><a href="DiseñoGrafico.html">Diseño</a></li>
+                <li><a href="programador.html">CV</a></li>
+                <li><a href="ExperienciaLaboral.html">Experiencia</a></li>
+                <li><a href="CarrerasPlatzi.html">Formación</a></li>
+                <li><a href="Referencias.html">Referencias</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-content container">
+            <h1>Curriculum Vitae</h1>
+            <p class="subtitle">Mi trayectoria profesional y habilidades técnicas</p>
+        </div>
+    </header>
     <h2>Resumen Profesional</h2>
     <p id="carta">
         Técnico Superior en Desarrollo de Software con sólida formación en programación, diseño web y experiencia en
@@ -46,29 +63,55 @@
     </ul>
 </section>
 
-<section id="formacion-curso">
-    <h2>Formación en Curso</h2>
-    <div class="formacion-item">
-        <h3>
-            <li>Construcción de Comunidades y Comunicación en Web3
-            Ruta de Platzi | 18 Cursos</li>
-            <li>Copywriter
-            Ruta de Platzi | 16 Cursos</li>
-            <li>Growth Marketer
-            Ruta de Platzi | 55 Cursos</li>
-            <li> Social Media Marketer
-            Ruta de Platzi | 19 Cursos</li>
-            <li>Community Manager
-            Ruta de Platzi | 21 Cursos</li>
-            <li>Content Marketer
-            Ruta de Platzi | 28 Cursos</li>
-            <li>Especialista en SEO
-            Ruta de Platzi | 13 Cursos</li>
-            <li>Especialista en E-Commerce
-            Ruta de Platzi | 24 Cursos </li>
-        </h3>
+<section id="desarrollo-actual" class="section">
+    <h2>Desarrollo Profesional Actual</h2>
+    <div class="formacion-grid">
+        <div class="formacion-item">
+            <h3>Marketing Digital y Comunicación</h3>
+            <ul class="curso-list">
+                <li>
+                    <span class="curso-titulo">Growth Marketer</span>
+                    <span class="curso-detalle">55 Cursos</span>
+                </li>
+                <li>
+                    <span class="curso-titulo">Social Media Marketer</span>
+                    <span class="curso-detalle">19 Cursos</span>
+                </li>
+                <li>
+                    <span class="curso-titulo">Community Manager</span>
+                    <span class="curso-detalle">21 Cursos</span>
+                </li>
+                <li>
+                    <span class="curso-titulo">Content Marketer</span>
+                    <span class="curso-detalle">28 Cursos</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="formacion-item">
+            <h3>Especialización Digital</h3>
+            <ul class="curso-list">
+                <li>
+                    <span class="curso-titulo">Especialista en SEO</span>
+                    <span class="curso-detalle">13 Cursos</span>
+                </li>
+                <li>
+                    <span class="curso-titulo">Especialista en E-Commerce</span>
+                    <span class="curso-detalle">24 Cursos</span>
+                </li>
+                <li>
+                    <span class="curso-titulo">Copywriter</span>
+                    <span class="curso-detalle">16 Cursos</span>
+                </li>
+                <li>
+                    <span class="curso-titulo">Construcción de Comunidades Web3</span>
+                    <span class="curso-detalle">18 Cursos</span>
+                </li>
+            </ul>
+        </div>
     </div>
 </section>
+
 <section id="habilidades">
     <h2>Habilidades Técnicas</h2>
     <ul>
@@ -104,6 +147,19 @@
 </section>
 <a href="index.html" id="volver-inicio">Volver al Inicio</a>
 
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mariano Monje Isleño</p>
+        </div>
+    </footer>
+
+    <div class="nav-buttons">
+        <a href="javascript:history.back()" class="nav-button" title="Página Anterior">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        <a href="index.html" class="nav-button" title="Inicio">
+            <i class="fas fa-home"></i>
+        </a>
+    </div>
 </body>
-<footer><p>&copy; 2023 Mariano Monje Isleño</p></footer>
 </html>

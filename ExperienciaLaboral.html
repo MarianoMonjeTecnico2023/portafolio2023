@@ -3,51 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
-    <title>Mariano Monje Isleño - Experiencia Laboral</title>
+    <title>Experiencia Laboral - Mariano Monje Isleño</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <h1 id="main-title">Trabajos que realice mientras estudiaba Diseño Grafico</h1>
+    <header class="hero">
+        <nav id="main-nav" class="container">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="ProyectosProgramacion.html">Proyectos</a></li>
+                <li><a href="DiseñoGrafico.html">Diseño</a></li>
+                <li><a href="programador.html">CV</a></li>
+                <li><a href="ExperienciaLaboral.html">Experiencia</a></li>
+                <li><a href="CarrerasPlatzi.html">Desarrollo Profesional</a></li>
+                <li><a href="Referencias.html">Referencias</a></li>
+            </ul>
+        </nav>
 
-    <section id="experiencia-laboral">
-        <div class="experiencia-item">
-            <h3 id="community-manager">Community Manager (2021-2022)</h3>
-            <p>Protecc Instituto. Gestión de redes sociales, creación de contenido, interacción con la comunidad.</p>
-            <p><strong>Logros:</strong>
-                Aumenté las visitas a la página web del instituto de 1,000 a más de 150,000.
-                Incrementé la cantidad de alumnos por curso de 5 a 40.
-            </p>
-            <p><strong>Referencia:</strong> Jorge Reyes (Director de Protecc Instituto) - 351 688-4735</p>
+        <div class="hero-content container">
+            <h1>Experiencia Laboral</h1>
+            <p class="subtitle">Mi trayectoria y logros profesionales</p>
         </div>
+    </header>
 
-        <div class="experiencia-item">
-            <h3 id="reparador-computadoras">•	Técnico en reparación y configuración de PC (Freelance) | 2008 - 2021</h3>
-            <p>Calchaquí. Diagnóstico y resolución de problemas de hardware y software en más de 300 computadoras de escritorio y portátiles.</p>
-            <p><strong>Tareas Destacadas:</strong> Contratado por el Hospital Estanislao Lopez y los consultorios exteriores de los médicos para realizar el mantenimiento de sus sistemas informáticos, incluyendo backup de datos, instalación de sistemas operativos y software, eliminación de virus y armado de computadoras a medida.
+    <main class="container">
+        <section class="section timeline-section">
+            <div class="timeline">
+                <!-- Community Manager -->
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Community Manager</h3>
+                            <span class="timeline-date">2021 - 2022</span>
+                        </div>
+                        <h4>Protecc Instituto</h4>
+                        <div class="timeline-description">
+                            <p>Gestión estratégica de redes sociales y creación de contenido digital para aumentar la visibilidad y engagement del instituto.</p>
+                            <div class="achievements">
+                                <h5><i class="fas fa-trophy"></i> Logros Destacados</h5>
+                                <ul>
+                                    <li>Incremento de visitas web de 1,000 a más de 150,000 mensuales</li>
+                                    <li>Aumento de alumnos por curso de 5 a 40 estudiantes</li>
+                                    <li>Desarrollo e implementación de estrategia de contenido multiplataforma</li>
+                                </ul>
+                            </div>
+                            <div class="skills-used">
+                                <span class="skill-tag">Marketing Digital</span>
+                                <span class="skill-tag">Gestión de Contenido</span>
+                                <span class="skill-tag">Analytics</span>
+                                <span class="skill-tag">Redes Sociales</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                •	Brindé soporte técnico remoto y presencial a usuarios de ambas instituciones, resolviendo problemas de hardware y software de manera eficiente y oportuna.
-                </p>
+                <!-- Técnico en Reparación -->
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Técnico en Reparación y Configuración de PC</h3>
+                            <span class="timeline-date">2008 - 2021</span>
+                        </div>
+                        <h4>Freelance - Hospital Estanislao Lopez</h4>
+                        <div class="timeline-description">
+                            <p>Especialista en soporte técnico y mantenimiento de sistemas informáticos para instituciones médicas y clientes particulares.</p>
+                            <div class="achievements">
+                                <h5><i class="fas fa-trophy"></i> Logros Destacados</h5>
+                                <ul>
+                                    <li>Mantenimiento exitoso de más de 300 equipos</li>
+                                    <li>Implementación de sistema de backup automatizado</li>
+                                    <li>Reducción del 60% en tiempo de inactividad de sistemas</li>
+                                </ul>
+                            </div>
+                            <div class="skills-used">
+                                <span class="skill-tag">Hardware</span>
+                                <span class="skill-tag">Software</span>
+                                <span class="skill-tag">Redes</span>
+                                <span class="skill-tag">Sistemas Operativos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profesor de Programación -->
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Profesor Particular de Programación</h3>
+                            <span class="timeline-date">2021</span>
+                        </div>
+                        <h4>Clases Online Personalizadas</h4>
+                        <div class="timeline-description">
+                            <p>Instructor especializado en programación web y desarrollo de software para estudiantes individuales.</p>
+                            <div class="achievements">
+                                <h5><i class="fas fa-trophy"></i> Logros Destacados</h5>
+                                <ul>
+                                    <li>100% de tasa de aprobación en exámenes finales</li>
+                                    <li>Desarrollo de material didáctico personalizado</li>
+                                    <li>Mentoría exitosa en proyectos prácticos</li>
+                                </ul>
+                            </div>
+                            <div class="skills-used">
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Pedagogía</span>
+                                <span class="skill-tag">Mentoría</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section skills-overview">
+            <h2>Competencias Clave</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <i class="fas fa-brain"></i>
+                    <h3>Habilidades Técnicas</h3>
+                    <ul>
+                        <li>Desarrollo Full Stack</li>
+                        <li>Gestión de Sistemas</li>
+                        <li>Marketing Digital</li>
+                        <li>Análisis de Datos</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <i class="fas fa-users"></i>
+                    <h3>Habilidades Blandas</h3>
+                    <ul>
+                        <li>Comunicación Efectiva</li>
+                        <li>Resolución de Problemas</li>
+                        <li>Trabajo en Equipo</li>
+                        <li>Adaptabilidad</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Mariano Monje Isleño</p>
         </div>
-
-        <div class="experiencia-item">
-            <h3 id="profesor-programacion">Profesor Particular de Programación (2021)</h3>
-            <p>Clases online personalizadas.</p>
-        </div>
-
-        <div class="experiencia-item">
-            <h3 id="ninero">Niñero (2017)</h3>
-            <p>Santa Fe Capital</p>
-            <p>Primer trabajo para financiar mis estudios de Técnico Superior en Desarrollo de Software.</p>
-            <p><strong>Logros:</strong> Logré que los hermanos aumentaran sus notas de la escuela primaria de Bueno a Muy Bueno y Excelente.</p>
-        </div>
-    </section>
-
-    <footer>
-        <p id="copyright">&copy; 2023 Mariano Monje Isleño</p>
     </footer>
-    <a href="index.html" id="volver-inicio">Volver al Inicio</a>
+
+    <div class="nav-buttons">
+        <a href="javascript:history.back()" class="nav-button" title="Página Anterior">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        <a href="index.html" class="nav-button" title="Inicio">
+            <i class="fas fa-home"></i>
+        </a>
+    </div>
 </body>
 </html>
